@@ -1,0 +1,25 @@
+# Copyright 2022 Giuseppe Petralia
+# See LICENSE file for licensing details.
+
+# For a complete list of supported options, see:
+# https://discourse.charmhub.io/t/charm-metadata-v2/3674/15
+name: home-assistant-k8s
+display-name: |
+  Home Assistant
+description: |
+  Home Assistant is a free and open-source software for home automation
+  that is designed to be the central control system for smart home devices
+  with focus on local control and privacy
+summary: |
+  Open source home automation that puts local control and privacy first.
+
+tags:
+  - home automation
+containers:
+  home-assistant:
+    resource: home-assistant
+
+resources:
+  home-assistant:
+    type: oci-image
+    description: OCI image for home-assistant (homeassistant/home-assistant)
